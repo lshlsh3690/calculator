@@ -6,7 +6,7 @@
 #include<stdio.h>
 
 int add<int, int>
-int sub<int, int>
+int sub<int, int>sa
 int div<int, int>
 int multi<int, int>
 
