@@ -15,6 +15,7 @@ int main(int argc, char* argv[]){
   char operator;
   //1
   //2
+  //3
 
   printf("please enter a expression : (ex>1,2)");
   printf("please enter a expression : ");
