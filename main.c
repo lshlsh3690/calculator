@@ -6,7 +6,7 @@ int div<int, int>
 int multi<int, int>
 
 int main(int argc, char* argv[]){
-  int number1, number2, number3;
+  int number1, number2, result;
   char operator;
 
   printf("please enter a expression : ");
@@ -14,17 +14,31 @@ int main(int argc, char* argv[]){
 
   switch(operator){
     case '+':
-    number3 = add(number1, number2);
+    result = add(number1, number2);
     break;
     case '-':
-    number3 = sub(number1, number2);
+    result = sub(number1, number2);
     break;
     case '*':
-    number3 = multi(number1, number2);
+    result = multi(number1, number2);
     break;
     case '/':
-    number3 = div(number1, number2);
+    result = div(number1, number2);
     break;
-
   }
+
+  printf("result is : %d.\n",result);
+}
+int add(int number1, int number2){
+  return number1+number2;
+}
+int sub(int number1, int number2){
+  return number1-number2;
+}
+
+int multi(int number1, int number2){
+  return number1*number2;
+}
+int div(int number1, int number2){
+  return number1/number2 + number1%number2;
 }
